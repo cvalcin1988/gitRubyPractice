@@ -132,28 +132,78 @@ end
 sum = add_numbers(4,3)
 puts sum
 puts "\n"
-# If Statements - 18:08
+
+puts "If Statements - 18:08"
 is_student = false
 is_smart = false
 
 if is_student and is_smart
     puts "You are a student"
-elsif is_student and !is_smart
+elsif is_student and !is_smart # the ! symbol acts as a negation operator
     puts "You are not a smart student"    
 else
     puts "You are not a student and not smart"
 end
+# >, <, >=, <=, != (not equal to), == (is equal to)
+if 1 < 3
+    puts "number comparison was true"
+end
+if "a" < "b"
+    puts "string comparison was true"
+end
+puts "\n"
 
 puts "Switch Statements - 19:53"
-
+my_grade = "A"
+case my_grade
+    when "A"
+        puts "You Pass"
+    when "F"
+        puts "You fail"
+    else
+        puts "Invalid grade"
+end
 
 puts "Dictionaries - 20:43"
+#stores array of key value pairs
+test_grade = { #dictionary named test_grade
+    "Andy" => "B+",
+    # key = > value
+    :Stanley => "C",
+    "Ryan" => "A",
+    3 => 95.2
+}
 
+test_grade["Andy"] = "B-" #overwrote previous pair value
+puts test_grade["Andy"]
+puts test_grade[:Stanley]
+puts test_grade[3]
+puts "\n"
 
 puts "While Loops - 22:15"
-
+index = 1
+while index <= 5
+    puts index
+    index +=1
+end
 
 puts "For Loops - 22:59"
+
+for index in 0..10 # for every number in range 0 - 10 (do this) print them out
+    puts index
+end
+
+5.times do |index|
+    puts index
+end
+puts "\n"
+lucky_nums = [4, 8, 15, 16, 23, 42]
+for lucky_num in lucky_nums # for each interating variable in target_Array - do the following code
+    puts lucky_num
+end
+lucky_nums.each do |lucky_num|  #same as previous: nameofarray.each do |iterating variable|
+    puts lucky_num
+end
 
 
 puts "Exception Catching - 24:49"
