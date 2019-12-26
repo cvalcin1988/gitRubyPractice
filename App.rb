@@ -33,7 +33,7 @@ puts greeting[1,3] #outputs the value of characters in the range of selected ind
 # Numbers - 8:56
 puts 2*3 #basic math
 puts 2**3 #exponent
-puts 10%3 #outputs remainder
+puts 10%3 #Modulus operation, outputs remainder
 puts 1 + 2 * 3 #follows order of operations
 puts 10 / 3.0 # outputs float
 
@@ -46,14 +46,42 @@ puts num.abs() #outputs absolute value of num, ignoring positive/negative
 puts num.round() #outputs the value of num to nearest whole number
 
 #Math class has useful math methods
+puts Math.sqrt(144) #function that finds square root
+puts Math.log(0) #outputs -Infinity
+
 
 # User Input - 11:28
-
+# puts "Enter your name: "
+# name = gets.chomp #gets capture input, .chomp cuts off new line character
+# puts "Hello #{name}, how are you?"
+# puts "Enter first num:"
+# num1 = gets.chomp
+#
+# puts "Enter second num:"
+# num2 = gets.chomp
+#
+# puts num1.to_f + num2.to_f
 
 # Arrays - 13:14
+lucky_numbers = [4,8, "fifteen", 16, 23, 42.0]
+# => indexes     0 1      2      3   4    5
+lucky_numbers[0] = 90
+puts lucky_numbers[0]
+puts lucky_numbers[1]
+puts lucky_numbers[-1] #use negative index, can grab in reverse order, 42.0 ~ -1, 23 ~ -2, 16 ~ -3
+puts lucky_numbers[-2]
+puts "\n\n"
+puts lucky_numbers[2,3] # grab from first index, and continue for seconds length
+puts "\n\n"
+puts lucky_numbers[2,4]
+puts "\n\n"
+
+puts lucky_numbers.length
 
 
-# 2d Arrays - 15:01
+
+# 2d Arrays - 15:01 ~N Dimensional Arrays
+
 
 
 # Array Functions - 15:33
