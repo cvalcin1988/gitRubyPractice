@@ -1,10 +1,10 @@
-#Ruby Programming | In One Video
-# Printing - 3:43
+puts "Ruby Programming | In One Video"
+puts "Printing - 3:43"
 puts "Hello"
 print "World"
 puts "!"
 
-# Variables & Data Types - 4:18
+puts "Variables & Data Types - 4:18"
 name = "Cal" #Strings
 age = 30  #Integer
 gpa = 3.5 # Decimal, Floats, Doubles
@@ -13,14 +13,14 @@ name = "Calherbe Valcin"
 puts "My name is #{name}" #String Literal
 puts "My name is " + name #Concatenation
 
-# Casting & Converting - 5:58
+puts "Casting & Converting - 5:58"
 puts 3.14.to_i  # convert to integer
 puts 3.to_f #convert to float
 puts "3.0".to_s #convert to string
 puts 100 + "50".to_i # Add 100 + the conversion of "50" to integer
 puts 100 + "50.99".to_f # Add 100 + (conversion of string to float)
 
-# Strings - 7:13
+puts "Strings - 7:13"
 greeting = "Hello"
 #indexes:   01234
 
@@ -30,7 +30,7 @@ puts greeting.include? "llo" #checks for string, returns true/false
 puts greeting.include? "z" #checks for string, returns true/false
 puts greeting[1,3] #outputs the value of characters in the range of selected indexes
 
-# Numbers - 8:56
+puts "Numbers - 8:56"
 puts 2*3 #basic math
 puts 2**3 #exponent
 puts 10%3 #Modulus operation, outputs remainder
@@ -50,7 +50,7 @@ puts Math.sqrt(144) #function that finds square root
 puts Math.log(0) #outputs -Infinity
 
 
-# User Input - 11:28
+puts "User Input - 11:28"
 # puts "Enter your name: "
 # name = gets.chomp #gets capture input, .chomp cuts off new line character
 # puts "Hello #{name}, how are you?"
@@ -62,7 +62,7 @@ puts Math.log(0) #outputs -Infinity
 #
 # puts num1.to_f + num2.to_f
 
-# Arrays - 13:14
+puts "Arrays - 13:14"
 lucky_numbers = [4,8, "fifteen", 16, 23, 42.0]
 # => indexes     0 1      2      3   4    5
 # => -indexes   -6 -5    -4     -3  -2   -1
@@ -81,7 +81,7 @@ puts lucky_numbers.length
 
 puts "\n\n"
 
-# 2d Arrays - 15:01 ~N Dimensional Arrays (2,3,4, etc dimensions)
+puts "2d Arrays - 15:01 ~N Dimensional Arrays (2,3,4, etc dimensions)"
 
 number_grid = [[1, 2], [3, 4]]
 number_grid[0][0] = 99
@@ -95,7 +95,7 @@ puts number_grid[1][0]
 puts number_grid[1][1]
 puts "\n"
 
-# Array Functions - 15:33
+puts "Array Functions - 15:33"
 
 friends = [] #create array
 friends.push("Oscar")
@@ -121,7 +121,7 @@ puts "\n"
 puts friends.include? "Oscar" # Does friend include string element Oscar, true or false
 
 
-# Methods - 16:58
+puts "Methods - 16:58"
 
 def add_numbers(num1, num2=99) #num2=99~ Ruby allows default parameters.
     #when the function run runs, num2 will equal 99 unless a new argument is sent
@@ -131,13 +131,41 @@ end
 
 sum = add_numbers(4,3)
 puts sum
+puts "\n"
 # If Statements - 18:08
-# Switch Statements - 19:53
-# Dictionaries - 20:43
-# While Loops - 22:15
-# For Loops - 22:59
-# Exception Catching - 24:49
-# Classes & Objects - 27:11
-# Constructors - 28:53
-# Getters & Setters - 30:03
-# Inheritance - 31:50
+is_student = false
+is_smart = false
+
+if is_student and is_smart
+    puts "You are a student"
+elsif is_student and !is_smart
+    puts "You are not a smart student"    
+else
+    puts "You are not a student and not smart"
+end
+
+puts "Switch Statements - 19:53"
+
+
+puts "Dictionaries - 20:43"
+
+
+puts "While Loops - 22:15"
+
+
+puts "For Loops - 22:59"
+
+
+puts "Exception Catching - 24:49"
+
+
+puts "Classes & Objects - 27:11"
+
+
+puts "Constructors - 28:53"
+
+
+puts "Getters & Setters - 30:03"
+
+
+puts "Inheritance - 31:50"
